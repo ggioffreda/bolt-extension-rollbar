@@ -1,0 +1,24 @@
+{
+    "name": "ggioffreda/bolt-extension-rollbar",
+    "description": "Adds error reporting capabilities using Rollbar.com ( https://rollbar.com/ ).",
+    "type": "bolt-extension",
+    "require": {
+        "bolt/bolt": ">=2.0.0,<3.0.0",
+        "rollbar/rollbar": "~0.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giovanni Gioffreda",
+            "email": "giovanni.gioffreda@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "Bolt\\Extension\\Gioffreda\\Rollbar\\": ""
+        }
+    }
+}
