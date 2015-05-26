@@ -20,9 +20,9 @@ The only default value set by the extension is `included_errno` set to include t
 A very basic configuration file may look like this:
 
 ```yaml
-    #filename: app/config/bolt-extension-rollbar.ggioffreda.yml
-    access_token: 0123456789abcdef0123456789abcdef
-    included_errno: 4871
+#filename: app/config/bolt-extension-rollbar.ggioffreda.yml
+access_token: 0123456789abcdef0123456789abcdef
+included_errno: 4871
 ```
 To know all the configuration option check out the
 [Rollbar configuration reference](https://github.com/rollbar/rollbar-php#configuration-reference).
