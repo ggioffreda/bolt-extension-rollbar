@@ -7,12 +7,6 @@ use Bolt\BaseExtension;
 
 class Extension extends BaseExtension
 {
-
-    public function __construct(Application $app)
-    {
-        parent::__construct($app);
-    }
-
     public function getDefaultConfig()
     {
         return array(
@@ -23,18 +17,14 @@ class Extension extends BaseExtension
 
     public function initialize()
     {
-        \Rollbar::init($this->getConfig());
+        // Only initialise rollbar if it's been installed.
+        if (class_exists('Rollbar')) {
+            \Rollbar::init($this->getConfig());
+        }
     }
 
     public function getName()
     {
         return "rollbar";
     }
-
 }
-
-
-
-
-
-

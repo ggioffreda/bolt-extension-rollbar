@@ -1,0 +1,3 @@
+# See https://github.com/rollbar/rollbar-php#configuration-reference for more configuration settings.
+
+#access_token: YOUR_SERVER_SIDE_ACCESS_TOKEN
